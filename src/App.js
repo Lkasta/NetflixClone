@@ -6,6 +6,7 @@ import FeatureMovie from './components/FeatureMovie';
 import header from './components/Header';
 import Header from './components/Header';
 
+
 export default () => {
 
   const [movieList, setMovieList] = useState([]);
@@ -32,7 +33,7 @@ export default () => {
 
   useEffect(() => {
     const scrollListner = () => {
-      if(window.scrollY > 10) {
+      if (window.scrollY > 10) {
         setBlackHeader(true)
       } else {
         setBlackHeader(false)
@@ -58,6 +59,13 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      {movieList.length <= 0 &&
+        <div className="loading">
+          <img src='https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif' alt='carregando' />
+        </div>
+      }
+
     </div>
   );
 }

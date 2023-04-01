@@ -1,5 +1,5 @@
 .featured {
-    height: 60vh;
+    height: 90vh;
 }
 
 .featured--vertical {
@@ -17,7 +17,7 @@
     padding-top: 70px;
     width: inherit;
     height: inherit;
-    background: linear-gradient(to right, #111 30%, transparent 70%);
+    background: linear-gradient(to right, #111 20%, transparent 70%);
 }
 
 .featured--name {
@@ -45,7 +45,7 @@
     margin-top: 15px;
     font-size: 20px;
     color: #999;
-    max-width: 40vw;
+    max-width: 35vw;
 }
 
 .featured--buttons {
